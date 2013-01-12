@@ -1,0 +1,80 @@
+\documentclass[10pt,a4paper]{moderncv}
+% moderncv themes
+% optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[blue,roman]{classic}
+\moderncvtheme[green,roman]{casual}    
+%\moderncvtheme[blue]{casual}     
+
+% character encoding
+\usepackage[utf8]{inputenc}                 % replace by the encoding you are using
+\usepackage{lmodern}
+
+% adjust the page margins
+\usepackage[scale=0.87]{geometry}
+\setlength{\hintscolumnwidth}{2.2cm}% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{2cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address detailsn 
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+\input{cmd}
+
+% personal data
+\firstname{Jérémie}
+\familyname{\textsc{SCHWARTZ}}
+%\title{Ecrivain}               % optional, remove the line if not wanted
+\address{9 rue Gérard Lautier}{76620 Le Havre}    % optional, remove the line if not wanted
+\phone{02 35 44 01 02}                      % optional, remove the line if not wanted
+\mobile{06 08 49 73 44}                    % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{jeremie.schwartz57@gmail.com}                      % optional, remove the line if not wanted
+\extrainfo{Né le 11 juillet 1988 (\age{} ans)}
+
+%\photo[70pt]{photo}
+\quote{Recherche d'un emploi d'été en développement informatique (juillet/août)}                 % optional, remove the line if not wanted
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+\usepackage{array}
+
+\begin{document}
+	\maketitle
+
+	\input{experienceJS}
+	\input{savoirJS}
+	\input{formationJS}
+	\input{diversJS}
+\end{document}
+
+
+% Publications from a BibTeX file 
+% \nocite{*}
+% \bibliographystyle{plain}
+% \bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+%% end of file `template_en.tex'.
+% 
+\section{Languages}
+ \cvlanguage{language 1}{Skill level}{Comment}
+% \cvlanguage{language 2}{Skill level}{Comment}
+% \cvlanguage{language 3}{Skill level}{Comment}
+% 
+ \section{Computer skills}
+ \cvcomputer{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+% \cvcomputer{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+% \cvcomputer{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+% 
+ \section{Interests}
+ \cvline{hobby 1}{\small Description}
+% \cvline{hobby 2}{\small Description}
+% \cvline{hobby 3}{\small Description}
+% 
+% \renewcommand{\listitemsymbol}{-} % change the symbol for lists
+% 
+% \section{Extra 1}
+% \cvlistitem{Item 1}
+% \cvlistitem{Item 2}
+% \cvlistitem[+]{Item 3}            % optional other symbol
+% 
+% \section{Extra 2}
+% \cvlistdoubleitem[\Neutral]{Item 1}{Item 4}
+% \cvlistdoubleitem[\Neutral]{Item 2}{Item 5}
+% \cvlistdoubleitem[\Neutral]{Item 3}{}

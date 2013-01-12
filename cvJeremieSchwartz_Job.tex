@@ -1,0 +1,45 @@
+\documentclass[10pt,a4paper]{moderncv}
+% moderncv themes
+% optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[blue,roman]{classic}
+\moderncvtheme[green,roman]{casual}    
+%\moderncvtheme[blue]{casual}     
+
+% character encoding
+\usepackage[utf8]{inputenc}                 % replace by the encoding you are using
+\usepackage{lmodern}
+
+% adjust the page margins
+\usepackage[scale=0.87]{geometry}
+\setlength{\hintscolumnwidth}{2.2cm}% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{2cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address detailsn 
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+\input{cmd}
+
+% personal data
+\firstname{Jérémie}
+\familyname{SCHWARTZ}
+%\title{Ecrivain}               % optional, remove the line if not wanted
+\address{9 rue Gérard Lautier}{76620 Le Havre}    % optional, remove the line if not wanted
+\phone{02 35 44 01 02}                      % optional, remove the line if not wanted
+\mobile{06 08 49 73 44}                    % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{jeremie.schwartz57@gmail.com}                      % optional, remove the line if not wanted
+\extrainfo{Né le 11 juillet 1988 (\age{} ans)}
+
+%\photo[70pt]{photo}
+\quote{Recherche d'un emploi d'été en développement informatique (juillet/août)}                 % optional, remove the line if not wanted
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+\usepackage{array}
+
+\begin{document}%
+	\maketitle%
+	\input{savoirJS}%
+	\input{experienceJS}%
+	\input{formationJS}%
+	\input{diversJS}%
+\end{document}%
+
